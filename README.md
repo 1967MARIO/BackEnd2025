@@ -15,3 +15,16 @@
 
 ### Códigos de estado
 - 200 OK, 201 Created, 204 No Content, 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 409 Conflict, 429 Too Many Requests.
+### Buenas prácticas de seguridad y rendimiento (incluidas)
+-Hash de contraseñas con Werkzeug (PBKDF2).
+-JWT con expiración y refresh tokens.
+-Roles en claims (RABC simple).
+-Rate limiting en /auth/login y /auth/register para mitigar fuerza bruta.
+-Caching de respuestas GET con Redis.
+-Paginación y ordenación para colecciones.
+-12‑factor config con .env.
+-Gunicorn con workers y threads para I/O bound.
+-Usuario no root dentro del contenedor.
+
+
+
