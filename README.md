@@ -37,8 +37,7 @@ Optimización y escalabilidad: rate limiting, caching con Redis, logging estruct
 -Gunicorn con workers y threads para I/O bound.
 -Usuario no root dentro del contenedor.
 
-#######
- Instalación rápida
+####### Instalación rápida
 
 Opción A: Docker (recomendada)
 docker-compose up --build
@@ -53,7 +52,6 @@ cp .env.example .env
 flask db init && flask db migrate -m "init" && flask db upgrade
 flask run --port 8000
 
-########
-SE REALIZA ESTE PROYECTO CON AYUDA DE UN PROFESIONAL EL EL DESARROLLO DE SISTEMAS 
+######## SE REALIZA ESTE PROYECTO CON AYUDA DE UN PROFESIONAL EL EL DESARROLLO DE SISTEMAS 
 ADEMAS SE RECURRE A LA IA PARA DEFINIR ALGUNOS PUNTOS IMPORTANTES COMO ES EL ANALISI DE CADA 
 DE LOS COMPONENTES DE ESTA APLICACION
