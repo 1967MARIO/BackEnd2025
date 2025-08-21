@@ -37,5 +37,18 @@ Optimización y escalabilidad: rate limiting, caching con Redis, logging estruct
 -Gunicorn con workers y threads para I/O bound.
 -Usuario no root dentro del contenedor.
 
+#######
+ Instalación rápida
 
+Opción A: Docker (recomendada)
+docker-compose up --build
+App en: http://localhost:8000
+Redis expuesto en 6379 y Postgres en 5432 (solo en red interna por defecto).
 
+Opción B: Entorno local
+python -m venv .venv
+source .venv/bin/activate  # En Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+cp .env.example .env
+flask db init && flask db migrate -m "init" && flask db upgrade
+flask run --port 8000
