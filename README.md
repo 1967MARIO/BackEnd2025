@@ -52,3 +52,8 @@ pip install -r requirements.txt
 cp .env.example .env
 flask db init && flask db migrate -m "init" && flask db upgrade
 flask run --port 8000
+
+########
+SE REALIZA ESTE PROYECTO CON AYUDA DE UN PROFESIONAL EL EL DESARROLLO DE SISTEMAS 
+ADEMAS SE RECURRE A LA IA PARA DEFINIR ALGUNOS PUNTOS IMPORTANTES COMO ES EL ANALISI DE CADA 
+DE LOS COMPONENTES DE ESTA APLICACION
